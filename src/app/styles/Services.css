@@ -1,0 +1,19 @@
+.services {
+  padding-top: 100px;
+}
+
+.services__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.services__list-title {
+  font-weight: 700;
+}
+
+.services__list-description {
+  font-weight: 400;
+  color: #AAAAAA;
+}
+
