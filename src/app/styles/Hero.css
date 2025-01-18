@@ -1,0 +1,60 @@
+.hero {
+  padding-top: 20px;
+}
+
+@keyframes disco-colors {
+  0% { background-color: #ecdabf; }
+  25% { background-color: #dcba94; }
+  50% { background-color: #eabb74; }
+  75% { background-color: #dcba94; }
+  100% { background-color: #ecdabf; }
+}
+
+.hero__start {
+  color: #7a5c33;
+  text-align: end;
+  animation: disco-colors 3s infinite ease;
+}
+
+.hero__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero__text1 {
+  font-weight: 700;
+}
+
+.hero__text2 {
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.hero__text3 {
+  font-weight: 500;
+  font-size: 95px;
+  margin: 0;
+}
+
+.hero__img {
+    position: absolute;
+    left: -200px;
+    top: -50px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hero__start {
+  position: relative;
+  background-color: #f5efe6;
+  color: #7a5c33;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: end;
+  padding-right: 20px;
+  padding-top: 70px;
+  padding-bottom: 300px;
+}

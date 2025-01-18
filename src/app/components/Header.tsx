@@ -52,36 +52,3 @@ const Header: React.FC = () => {
 }
 
 export default Header;
-
-// import React from "react";
-// import Image from "next/image";
-// import Link from "next/link";
-// import "../styles/Header.css";
-
-// const Header: React.FC = () => {
-//   return (
-//     <header className="header">
-//       <div className="logo">
-//         <Image src="/logo.png" alt="Logo" width={50} height={50} />
-//       </div>
-//       <nav className="nav">
-//         <ul>
-//           <li>
-//             <Link href="/">Home</Link>
-//           </li>
-//           <li>
-//             <Link href="/about">About</Link>
-//           </li>
-//           <li>
-//             <Link href="/services">Services</Link>
-//           </li>
-//           <li>
-//             <Link href="/contact">Contact</Link>
-//           </li>
-//         </ul>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;
