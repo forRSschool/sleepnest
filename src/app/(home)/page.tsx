@@ -1,18 +1,19 @@
-import { Hero } from "../components";
-import Services from "../components/Services";
+
+import { Hero, Quality, Services } from "../components";
+
 
 export default function Home() {
   return (
-    <>
-      <Hero/>
-      <Services/>
-      {/* <Qualiyt/> */}
-      {/* <Product /> */}
-      {/* <Qualiyt/> */}
-      {/* <Product /> */}
-      {/* <Qualiyt/> */}
-      {/* <Product /> */}
-      {/* <News /> */}
-    </>
+      <>
+        <Hero/>
+        <Services/>
+        <Quality bgColor="#464351" img="/quality__img.png"/>
+        {/* <Product /> */}
+        {/* <Quality bgColor="#7F54B3" img="/quality__img2.png"/> */}
+        {/* <Product /> */}
+        {/* <Quality bgColor="#236F48" img="/quality__img3.png"/> */}
+        {/* <Product /> */}
+        {/* <News /> */}
+      </>
   );
 }

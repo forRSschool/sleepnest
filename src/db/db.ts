@@ -19,4 +19,19 @@ export const services = [
     description: "All payment methods accepted",
     img: "/secure-payment.svg"
   }
+];
+
+export const qualities = [
+  {
+    bgColor: "#464351",
+    img: "/quality_img.png"
+  },
+  {
+    bgColor: "#7F54B3",
+    img: "/quality_img2.png"
+  },
+  {
+    bgColor: "#236F48",
+    img: "/quality_img3.png"
+  }
 ]

@@ -4,4 +4,4 @@ interface IService {
   img: string;
 }
 
-export default IService
+export default IService;
