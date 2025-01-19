@@ -1,5 +1,5 @@
 
-import { Hero, Quality, Services } from "../components";
+import { Hero, Product, Quality, Services } from "../components";
 
 
 export default function Home() {
@@ -8,11 +8,11 @@ export default function Home() {
         <Hero/>
         <Services/>
         <Quality bgColor="#464351" img="/quality__img.png"/>
-        {/* <Product /> */}
-        {/* <Quality bgColor="#7F54B3" img="/quality__img2.png"/> */}
-        {/* <Product /> */}
-        {/* <Quality bgColor="#236F48" img="/quality__img3.png"/> */}
-        {/* <Product /> */}
+        <Product season="Winter"/>
+        <Quality bgColor="#7F54B3" img="/quality__img2.png"/>
+        <Product season="Autumn"/>
+        <Quality bgColor="#236F48" img="/quality__img3.png"/>
+        <Product season="Summer" />
         {/* <News /> */}
       </>
   );

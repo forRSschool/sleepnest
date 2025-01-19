@@ -35,3 +35,15 @@ export const qualities = [
     img: "/quality_img3.png"
   }
 ]
+
+export const products = [
+  {
+    season: "Winter",
+  },
+  {
+    season: "Autumn"
+  },
+  {
+    season: "Summer"
+  }
+]
