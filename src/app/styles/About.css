@@ -1,0 +1,21 @@
+.about__start{
+  display: flex;
+  align-items: center;
+  gap: 12vw;
+}
+
+.about__title {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.about-img {
+  border-radius: 5%;
+  width: 55vw;
+  height: 80vh;
+}
+
+.about-text {
+  margin: 16px;
+  max-width: 500px;
+}
