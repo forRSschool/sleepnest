@@ -1,7 +1,9 @@
+'use client'
+
 import Image from 'next/image';
 import Link from 'next/link';
-import IQuality from '../interfaces/qualities';
-import '../styles/Quality.css';
+import IQuality from '../../interfaces/qualities';
+import '../../styles/Quality.css';
 
 
 const Quality = ({bgColor, img}: IQuality) => {

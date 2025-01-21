@@ -1,7 +1,8 @@
+'use client'
 import Image from "next/image";
 
 import Link from "next/link";
-import '../styles/Product.css';
+import '../../styles/Product.css';
 
 interface ProductProps {
   season: string;

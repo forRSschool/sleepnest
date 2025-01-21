@@ -1,8 +1,8 @@
 import { services } from "@/db/db";
 import Image from "next/image";
 
-import { IService } from "../interfaces";
-import '../styles/Services.css';
+import { IService } from "../../interfaces";
+import '../../styles/Services.css';
 
 const Services: React.FC = () => {
 

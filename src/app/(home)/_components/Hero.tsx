@@ -1,7 +1,6 @@
 import Image from "next/image";
-// import Link from "next/link";
 
-import '../styles/Hero.css';
+import '../../styles/Hero.css';
 
 const Hero: React.FC = () => {
 

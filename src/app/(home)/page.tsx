@@ -1,5 +1,5 @@
+import { Hero, News, Product, Quality, Services } from "./_components";
 
-import { Hero, Product, Quality, Services } from "../components";
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <Product season="Autumn"/>
         <Quality bgColor="#236F48" img="/quality__img3.png"/>
         <Product season="Summer" />
-        {/* <News /> */}
+        <News />
       </>
   );
 }
