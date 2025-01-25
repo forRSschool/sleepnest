@@ -1,16 +1,56 @@
+'use client'
+
 import Link from "next/link";
 import '../styles/Contacts.css';
 
 const Contacts: React.FC = () => {
+  const BOT_TOKEN = "7658937177:AAGtQAY5ZQL8DzMbjecELg29zW9N5dEISG4";
+  const CHAT_ID = "6469354250";
+
+  const onSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    
+    const email = form.elements.namedItem("email") as HTMLInputElement;
+    const phone = form.elements.namedItem("phone") as HTMLInputElement;
+    const message = form.elements.namedItem("message") as HTMLTextAreaElement;
+
+    const MESSAGE = 
+    `{
+      "Form Data:"
+      "Email:": ${email.value}
+      "Phone:": ${phone.value}
+      "Message:": ${message.value}
+    }`;
+
+    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: CHAT_ID,
+        text: MESSAGE,
+      }),
+    })
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.ok) {
+        console.log("Message sent successfully!");
+      } else {
+        console.error("Error sending message:", data.description);
+      }
+    })
+    .catch((error) => console.error("Error:", error));
+  }
+
   return (
     <div className="connection">
       <div className="connection__start">
         <div>
           <h1 className="connection__title">Connection</h1>
-          <form className="connection__form">
-            <input className="input" type="text" placeholder="Your email" required/>
-            <input className="input" type="text" placeholder="Your phone number" required/>
-            <textarea className="input" placeholder="Please write if you have a message" name="" id="" required></textarea>
+          <form className="connection__form" onSubmit={e => onSubmitForm(e)}>
+            <input className="input" type="email" placeholder="Your email" required name="email"/>
+            <input className="input" type="number" placeholder="Your phone number" required name="phone"/>
+            <textarea className="input" placeholder="Please write if you have a message" name="message" required></textarea>
             <button className="connect__button" type="submit">Submit</button>
           </form>
         </div>
