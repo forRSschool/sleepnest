@@ -13,6 +13,11 @@
   gap: 30px;
 }
 
+.quality__start:hover {
+  box-shadow: 0 0 20px red; 
+}
+
+
 .quality__left-title {
   font-size: 90px;
   font-weight: 800;
