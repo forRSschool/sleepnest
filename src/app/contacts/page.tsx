@@ -40,6 +40,9 @@ const Contacts: React.FC = () => {
       }
     })
     .catch((error) => console.error("Error:", error));
+    email.value = '';
+    phone.value= '';
+    message.value = ''
   }
 
   return (
