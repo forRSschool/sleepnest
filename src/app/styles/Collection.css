@@ -1,0 +1,27 @@
+.collection {
+  display: flex;
+  gap: 5vw;
+}
+
+.collection__left {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.category {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.category:hover, .category.active {
+  color: #a17f4a;
+}
+
+.collection__input {
+  background-color: #e6e6e6;
+  line-height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}

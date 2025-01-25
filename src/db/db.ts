@@ -21,6 +21,8 @@ export const services = [
   }
 ];
 
+export const seasons = ['Winter', 'Autumn', 'Summer'];
+
 export const qualities = [
   {
     bgColor: "#464351",
@@ -34,7 +36,7 @@ export const qualities = [
     bgColor: "#236F48",
     img: "/quality_img3.png"
   }
-]
+];
 
 
 export const products = [
@@ -219,4 +221,4 @@ export const products = [
     title: 'Olive Branch',
     season: 'Summer'
   }
-]
+];
