@@ -1,4 +1,3 @@
-'use client'
 import { products } from "@/db/db";
 import Image from "next/image";
 
@@ -21,7 +20,7 @@ const Product: React.FC<ProductProps> = ({season}) => {
       <ul className="product__list">
         {cards.map((item) => (
           <li className="product__list-item" key={item.id}>
-            <Link href="/product/11">
+            <Link href={`/product/${item.id}`}>
               <Image className="product__list-img" src={item.img} alt="product__image" width="250" height="200"/>
             </Link>
             <button className="product__heart">

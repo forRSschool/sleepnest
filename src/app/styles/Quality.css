@@ -41,15 +41,21 @@
     margin-bottom: 20px;
 }
 
-.quality__right-btn {
-    padding: 12px 35px;
-    border-radius: 15px;
-    border: none;
-}
-
 .quality__img {
   position: absolute;
   max-width: 100%;
   height: auto;
   left: 15%;
+}
+
+.quality__right-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }

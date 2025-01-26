@@ -1,19 +1,20 @@
-import { Hero, News, Product, Quality, Services } from "./_components";
+import { Hero, News, Services } from "./_components";
+import HomeClient from "./HomeClient";
 
+export default async function Home() {
+  // Fetch data at the server level (static data for now)
+  const data = [
+    { bgColor: "#464351", img: "/quality__img.png", season: "Winter" },
+    { bgColor: "#7F54B3", img: "/quality__img2.png", season: "Autumn" },
+    { bgColor: "#236F48", img: "/quality__img3.png", season: "Summer" },
+  ];
 
-
-export default function Home() {
   return (
-      <>
-        <Hero/>
-        <Services/>
-        <Quality bgColor="#464351" img="/quality__img.png"/>
-        <Product season="Winter"/>
-        <Quality bgColor="#7F54B3" img="/quality__img2.png"/>
-        <Product season="Autumn"/>
-        <Quality bgColor="#236F48" img="/quality__img3.png"/>
-        <Product season="Summer" />
-        <News />
-      </>
+    <>
+      <Hero />
+      <Services />
+      <HomeClient data={data} />
+      <News />
+    </>
   );
 }

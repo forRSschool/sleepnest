@@ -1,12 +1,11 @@
-'use client'
 
 import Image from 'next/image';
-import Link from 'next/link';
 import IQuality from '../../interfaces/qualities';
 import '../../styles/Quality.css';
 
 
 const Quality = ({bgColor, img}: IQuality) => {
+
 	return (
     <section className='quality'>
       <div className='quality__start' style={{ background: `${bgColor}` }}>
@@ -24,9 +23,7 @@ const Quality = ({bgColor, img}: IQuality) => {
         <div className='quality__right'>
           <p className='quality__right-title'>&quot;Ecologically Clean Sleep Products&quot;</p>
           <div className='quality__right-text'>has been a company producing cotton fabrics for use all over the world for many years</div>
-          <Link className='quality__right-btn-link' href='/collection'>
-            <button className='quality__right-btn'>Collection</button>
-          </Link>
+          <button className='quality__right-btn-link quality__right-btn' >Collection</button>
         </div>
       </div>
     </section>
