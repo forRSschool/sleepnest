@@ -56,7 +56,7 @@ const Contacts: React.FC = () => {
             <button className="connect__button" type="submit">Submit</button>
           </form>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.8595359357932!2d64.40220371155725!3d39.74280597143722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50065c4655162d%3A0x78d6b819222f25d2!2zQWxwb21pc2ggS28nY2hhc2kgODAsIEJ1eG9ybywgQnV4b3JvIFZpbG95YXRpLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1737480433758!5m2!1sru!2s" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+        <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.8595359357932!2d64.40220371155725!3d39.74280597143722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50065c4655162d%3A0x78d6b819222f25d2!2zQWxwb21pc2ggS28nY2hhc2kgODAsIEJ1eG9ybywgQnV4b3JvIFZpbG95YXRpLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1737480433758!5m2!1sru!2s" width="600" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
       <div className="connection__end">
