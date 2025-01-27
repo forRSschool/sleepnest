@@ -4,14 +4,29 @@ import Link from "next/link";
 import "../../styles/Product.css";
 import "../../styles/SingleProduct.css";
 
+// type ProductPageProps = {
+//   params: {
+//     id: string; 
+//   };
+// };
+
+
+// const SingleProduct = ({ params }: ProductPageProps) => {
+//   const product = products.find((item) => item.id === params.id);
+
+//   if (!product) {
+//     return <div>Product not found</div>;
+//   }
+
+//   const similarProducts = products
+//     .filter((item) => item.season === product.season && item.id !== product id)
+//     .slice(0, 5);
+
 type ProductPageProps = {
-  params: {
-    id: string; 
-  };
+  params: { id: string };
 };
 
-
-const SingleProduct = ({ params }: ProductPageProps) => {
+export default function SingleProduct({ params }: ProductPageProps) {
   const product = products.find((item) => item.id === params.id);
 
   if (!product) {
@@ -94,5 +109,3 @@ const SingleProduct = ({ params }: ProductPageProps) => {
     </div>
   );
 };
-
-export default SingleProduct;
