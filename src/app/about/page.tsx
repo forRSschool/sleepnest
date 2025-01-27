@@ -6,6 +6,9 @@ const About:React.FC = () => {
     <div className='about'>
       <div className='about__start'>
         <div className="about__left">
+          <Image className='about-img' src={'/aboutImg.png'} alt='aboutImg' width={1000} height={1000}/>
+        </div>
+        <div className='about__right'>
           <h1 id="about-heading" className="about__title">Ecologically Clean Sleep Products</h1>
           <article className="about__content">
             <p className="about__text">
@@ -42,9 +45,6 @@ const About:React.FC = () => {
               Our company is always happy to provide quality products and high level of service to its customers.
             </p>
           </article>
-        </div>
-        <div className='about__right'>
-          <Image className='about-img' src={'/aboutImg.png'} alt='aboutImg' width={1000} height={1000}/>
         </div>
       </div>
     </div>
