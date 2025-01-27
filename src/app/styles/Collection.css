@@ -25,3 +25,19 @@
   padding: 10px;
   border-radius: 20px;
 }
+
+@media( max-width: 520px) {
+  .collection {
+    flex-direction: column;
+  }
+
+  .collection__left {
+    align-items: center;
+  }
+}
+
+@media( max-width: 328px ) {
+  .product__list-item {
+    scale: 0.8;
+  }
+}
