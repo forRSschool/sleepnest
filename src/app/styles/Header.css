@@ -99,6 +99,10 @@
 }
 
 @media (max-width: 768px) {
+  .logo {
+    transform: scale(0.7);
+  }
+
   .header__right {
     display: none;
     flex-direction: column;
@@ -145,5 +149,15 @@
   .nav__list-link {
     font-size: 24px;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 328px) {
+  .logo {
+    transform: scale(0.4);
+  }
+
+  .header {
+    padding: 0;
   }
 }

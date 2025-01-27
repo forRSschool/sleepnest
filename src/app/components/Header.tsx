@@ -21,6 +21,7 @@ const Header: React.FC = () => {
       <div className="header__left">
         <Link onClick={closeMenu} href={'/'}>
           <Image 
+            className="logo"
             src="/logo.png" 
             alt="Logo" 
             width={180} 
