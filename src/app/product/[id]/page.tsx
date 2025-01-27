@@ -38,7 +38,7 @@ const similarProducts = products
                 <td className="single__left-td">260×280 cm (1 piece)</td>
               </tr>
               <tr>
-                <td className="single__left-td">Bed:</td>
+                <td className="__left-td">Bed:</td>
                 <td className="single__left-td">160x220 cm (2 pieces)</td>
               </tr>
               <tr>

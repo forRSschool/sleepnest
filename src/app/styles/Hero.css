@@ -88,3 +88,18 @@
     top: 50px;
   }
 }
+
+@media( max-width: 468px ) {
+  .hero__img {
+    left: 0px;
+    top: 50px;
+  }
+
+  .hero__text2 {
+    font-size: 35px;
+  }
+
+  .hero__text3 {
+    font-size: 65px;
+  }
+}
