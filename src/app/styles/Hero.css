@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 2;
 }
 
 .hero__text1 {
@@ -57,4 +58,33 @@
   padding-right: 20px;
   padding-top: 70px;
   padding-bottom: 300px;
+}
+
+@media( max-width: 1024px ) {
+  .hero__img {
+    left: -100px;
+    top: -50px;
+    z-index: 1;
+  }
+
+  .hero__start {
+    padding-bottom: 200px;
+  }
+}
+
+@media( max-width: 768px ) {
+  .hero__img {
+    left: -100px;
+    top: 50px;
+  }
+  .hero__start {
+    padding-bottom: 100px;
+  }
+}
+
+@media( max-width: 520px ) {
+  .hero__img {
+    left: 0px;
+    top: 50px;
+  }
 }
