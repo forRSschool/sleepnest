@@ -59,3 +59,158 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+/* Base styles */
+.quality {
+  padding-top: 100px;
+}
+
+.quality__start {
+  display: flex;
+  color: #fff;
+  position: relative;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  gap: 30px;
+}
+
+.quality__start:hover {
+  box-shadow: 0 0 20px red;
+  transition: box-shadow 0.3s ease;
+}
+
+.quality__left-title {
+  font-size: 90px;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.quality__left-text {
+  font-size: 20px;
+}
+
+.quality__right-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  max-width: 500px;
+}
+
+.quality__right-text {
+  font-size: 16px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.quality__img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  left: 15%;
+}
+
+.quality__right-btn {
+  display: inline-block;
+  padding: 12px 35px;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.quality__right-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Laptop and smaller desktop */
+@media (max-width: 1200px) {
+  .quality__left-title {
+    font-size: 70px;
+  }
+  
+  .quality__right-text {
+    width: 350px;
+  }
+  
+  .quality__start {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .quality {
+    padding-top: 60px;
+  }
+
+  .quality__start {
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+  }
+
+  .quality__img {
+    position: relative;
+    left: 0;
+    order: 2;
+    margin: 30px auto;
+    max-width: 90%;
+  }
+
+  .quality__right-text {
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quality__left {
+    order: 1;
+  }
+
+  .quality__right {
+    order: 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .quality {
+    padding-top: 40px;
+  }
+
+  .quality__start {
+    padding: 30px 20px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .quality__left-title {
+    font-size: 48px;
+    margin: 0 0 15px;
+  }
+
+  .quality__left-text {
+    font-size: 18px;
+  }
+
+  .quality__right-title {
+    font-size: 22px;
+    margin: 0 0 15px;
+  }
+
+  .quality__right-text {
+    font-size: 14px;
+  }
+
+  .quality__right-btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
