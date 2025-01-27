@@ -1,26 +1,31 @@
-import { products } from "@/db/db"
-import Image from "next/image"
-import { JSX } from "react"
+import { products } from "@/db/db";
+import Image from "next/image";
+import Link from "next/link";
+import "../../styles/Product.css";
+import "../../styles/SingleProduct.css";
 
-import Link from "next/link"
-import '../../styles/Product.css'
-import '../../styles/SingleProduct.css'
+type ProductPageProps = {
+  params: {
+    id: string; 
+  };
+};
 
-const SingleProduct = ({params}:{params:{id:number}}):JSX.Element => {
-  const product = products.find(item => item.id == params.id)
+
+const SingleProduct = ({ params }: ProductPageProps) => {
+  const product = products.find((item) => item.id === params.id);
 
   if (!product) {
-    return <div>Product not found</div>
+    return <div>Product not found</div>;
   }
 
-const similarProducts = products
-  .filter(item => item.season === product.season && item.id !== product.id)
-  .slice(0, 5);
+  const similarProducts = products
+    .filter((item) => item.season === product.season && item.id !== product.id)
+    .slice(0, 5);
 
   return (
     <div className="single-product">
       <div className="card-info">
-        <Image src={product.img} alt={product.title} width={700} height={500}/>
+        <Image src={product.img} alt={product.title} width={700} height={500} />
         <div className="card-info__description">
           <h2>{product.title}</h2>
           <table className="single__left-table">
@@ -34,7 +39,7 @@ const similarProducts = products
                 <td className="single__left-td">50x70 cm (2 pieces)</td>
               </tr>
               <tr>
-                <td className="single__left-td">Bedding::</td>
+                <td className="single__left-td">Bedding:</td>
                 <td className="single__left-td">260×280 cm (1 piece)</td>
               </tr>
               <tr>
@@ -46,23 +51,18 @@ const similarProducts = products
                 <td className="single__left-td">Custom Size</td>
               </tr>
               <tr>
-                <td className="single__left-td">Manufacturer::</td>
+                <td className="single__left-td">Manufacturer:</td>
                 <td className="single__left-td">Environmental Clean Sleep Product</td>
-              </tr>
-              <tr>
-                <td className="single__left-td"></td>
-                <td className="single__left-td"></td>
               </tr>
             </tbody>
           </table>
           <p>Category: {product.season} Collection</p>
         </div>
       </div>
-      {/* <div className="single-product__reviews"></div> */}
       <div className="single-product__similar-products">
         <h2>Similar Products</h2>
         <ul className="product__list">
-        {similarProducts.map(item => (
+          {similarProducts.map((item) => (
             <li className="product__list-item" key={item.id}>
               <Link href={`/product/${item.id}`}>
                 <Image
@@ -92,7 +92,7 @@ const similarProducts = products
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SingleProduct
+export default SingleProduct;
